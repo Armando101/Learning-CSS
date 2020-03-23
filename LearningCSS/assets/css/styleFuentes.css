@@ -1,0 +1,55 @@
+/* Fuentes */
+/* Las fuentes se indican con font-family */
+/* Incluimos el nombre de la fuente deseada, podemos incluir varias, en dado caso que una no se encuentre se ocupará la siguiente */
+
+/* Font weight */
+/* Nos indica que tan negrita quiero que se vea, bold equivale a 600 */
+
+/* Font style */
+/* Podemos poner letras cursivas con italic u oblique */
+
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* Podemos convertir el texto a mayúsuclas */
+  /* text-transform: capitalize; */
+
+  /************** Colores ********************/
+  /* Colores del sistema */
+  /* Son colores que ya vienen por defecto en CSS */
+  /* En el siguiente link podemos encontrarlos */
+  color: MediumPurple;
+  color: DarkCyan;
+
+  /* Colores hexadecimales */
+  color: #ccc;
+
+  /* Colores RGB */
+  color: rgb(61, 30, 91);
+
+  /* Colores RGBA */
+  /* Nos permite seleccionar una opacida que va de 0-1 */
+  color: rgba(61, 30, 91, 0.5);
+
+}
+
+h3 {
+  font-family: "Comic Sans MS";
+  font-size: 25px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* Podemos incluir fuentes desde google fonts */
+/* Para esto tenemos que incluir el link en el HTML */
+h1 {
+  font-family: 'Oswald', sans-serif;
+}

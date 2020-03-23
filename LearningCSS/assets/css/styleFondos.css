@@ -1,0 +1,61 @@
+/* Fondos */
+/* Incluimos estilos de fondo con background */
+/* Podemos incluir un color de fondo e imagenes */
+
+body {
+  background-color: #ccc;
+  background-image: url('../img/pattern1.jpeg');
+  margin: 0px;
+
+  /* Por defecto toma la propiedad repeat */
+  background-repeat: repeat;
+
+  /* Podemos hacer que se muestre la imagen en toda la pantalla sin repetir */
+  /* Dependiendo la imagen se puede distorcionar */
+  /* background-size: 100%; */
+
+  /* Esta propiedad permite que el fondo se quede estático mientras hago scrool */
+  /* background-attachment: fixed; */
+
+  /* Podemos mover la posición del fondo de la imagen */
+  /* background-position: left bottom; */
+}
+
+#caja {
+  border: 5px solid black;
+  padding: 10px;
+
+  background-color: rgb(50, 88, 110);
+  color: white;
+  font-family: "Open Sans";
+
+  /* Podemos modificar la posción del texto */
+  text-align: justify;
+  text-align: right;
+  text-align: center;
+
+  /* Ajusto la altura de línea */
+  line-height: 50px;
+
+  /* Modificar el texto a mayúsculas o minúsculas */
+  /* text-transform: uppercase; */
+
+  /* Subrayar, rayar, tachar el texto */
+  /* text-decoration: line-through; */
+
+  /* Alineado vertical */
+  /* Se alinea verticalmente el texto con la caja */
+  /* https://www.w3schools.com/cssref/pr_pos_vertical-align.asp */
+  vertical-align: top;
+
+  /* Agrega sangría en cada salto de párrafo*/
+  text-indent: 15px;
+
+  /* Espaciado entre palabras */
+  /* word-spacing: 10px; */
+
+  /* Espacio entre palabras */
+  /* letter-spacing: 5px; */
+
+
+}

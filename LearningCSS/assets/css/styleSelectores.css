@@ -1,0 +1,127 @@
+/*
+################### SELECTORES ###############
+*/
+
+/* Selector universal*/
+/* Nos permite aplicar un estilo en general a toda la página */
+/* Nos permite colocar estilos 'por default' */
+* {
+  font-style: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Selector de etiqueta */
+/* Nos permite seleccionar cualquiera de los elementos HTML por su etiqueta */
+/* En este caso h1 es el selector */
+h1 {
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+a {
+  font-size: 18px;
+  color: #97b9f2;
+  text-decoration: none;
+}
+
+footer a {
+  color: #0873a2;
+}
+
+/* Selector de id */
+/* Colocamos el caracter # seguido del id */
+/* Podemos hacer que dos elementos compartan estilos separandolos por comas */
+
+#descripcion, #titulo {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+/* En css se sobreescriben los estilos, esto por ser un lenguaje en cascada */
+#titulo {
+  background: rgb(61, 160, 242);
+  border: 2px dashed black;
+}
+
+/* Selector de clase */
+/* Es similar a id con la diferencia de que con clases podemos seleccionar varios elementos, con id solo podemos tomar un elemento */
+.parrafo1, .parrafo3 {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.parrafo2 {
+  font-weight: bold;
+  color: #072a3c;
+}
+
+.parrafo3 {
+  color: rgb(0, 140, 255);
+}
+
+/* Selector de atributo */
+/* Son muy usados para los formularios */
+
+#usuario form {
+  border: 1px solid rgb(0, 140, 255);
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Con el asterisco seleccionamos todos los elementos dentro del formulario */
+#usuario form * {
+  /* block hace referencia a que cada elemento será organizado como si tuviera un bloque para él solo, es decir, toda una caja del 100% de ancho de la pantalla */
+  /* De esta manera logramos que cada elemento se posicione uno debajo del otro y no en seguida */
+  display: block;
+}
+
+/* Con los corchetes selecciono el atributo */
+/* voy a seleccionar los elementos de HTML que tegan text en su stributo type */
+input[type = "text"] {
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 300px;
+}
+
+input[type = "submit"] {
+  background: black;
+  color: white;
+  padding: 15px;
+  font-size: 13px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Selectores hijo */
+/* Nos permiten seleccionar particularmente ciertos elementos anidados */
+/* No  selecciona todos los elementos a, sólo los que están dentro de li que a su vez está dentro de menu */
+#menu > li > a {
+  color: #7e220d;
+}
+
+
+/* Prioridad */
+/* Se le da más prioridad a los elementos que estén más abajo, esto porque CSS es un lenguaje en cascada */
+/* El orden de la prioridad de los estilos es siempre lo que está más abajo */
+/* CSS ejerce mayor prioridad sobre un estilo si éste es más específico */
+/* CSS ejerce mayor prioridad si el estilo tiene la palabra !important */
+
+/* Orden de prioridad */
+/* Mayor prioridad ++++++ ------ Menor prioridad */
+/* !important    específico    abajo(cascada) */
+
+/* El h1 se pintará de gris y no de púrpura a pesar de que el púrpura esté más abajo, esto porque #saludo h1 es más específico */
+
+#saludo h1 {
+  background: #ccc;
+}
+
+h1 {
+  background: purple;
+
+  /* Si colocó un important tendrá mayor prioridad */
+  /* background: purple !important; */
+}
