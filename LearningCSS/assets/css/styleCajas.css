@@ -1,0 +1,63 @@
+/* ********************** Cajas ************* */
+
+/* Por defecto el html ya viene con margenes, se los puedo quitar de la siguiente manera */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  padding: 20px;
+}
+
+/* Colocamos ancho y alto con width y height */
+.caja, .caja {
+  width: 250px;
+  height: 250px;
+
+  /* Agregamos un color de fondo para ver las dimensiones de la caja */
+  background-color: lightblue;
+
+  /* Puedo indicarle un borde */
+  border: 10px solid black;
+
+  /* Agregamos margenes */
+  margin: 10px;
+  /* margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 25px; */
+
+  /* Colocar margen interno */
+  /* También es posible usar top, bottom, left y right */
+  padding: 5px;
+
+  /* Posicionar cajas */
+  /* La propiedad float solo la puedo ocupar con elementos que tienen display: block */
+  display: block;
+  float: none;    /* Por defecto */
+  float: right;
+  float: left;
+
+  /* Todo el demás contenido hará un wrap en estas cajas, es decir, no se posicionará abajo de las cajas sino que a un lado */
+  /* Para evitar esto usamos la propiedad clear, esto lo agregamos en otra clase con un div */
+}
+
+.clearfix {
+  /* Eliminarmos los elementos con float */
+  float: none;
+  clear: both;
+}
+
+.caja p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial;
+  line-height: 230px;
+}
+
+#cajas {
+  max-width: 900px;
+  border: 1px solid black;
+}
