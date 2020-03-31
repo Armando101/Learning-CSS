@@ -84,7 +84,19 @@
   /* border: 1px solid black; */
   float: left;
   min-height: 500px;
+  max-height: 650px;
   text-align: center;
+
+  /* overflow */
+  /* hidden: lo que se sale del contenedor no lo muestra */
+  overflow: hidden;
+
+  /* visibles: propiedad por defecto */
+  overflow: visible;
+
+  /* scoll: muestra una barra para mostrar el contenido que se sale del contenedor */
+  /* El -y es para que no muestre la línea inferior en el eje y */
+  overflow-y: scroll;
 }
 
 #contenido .caja {
