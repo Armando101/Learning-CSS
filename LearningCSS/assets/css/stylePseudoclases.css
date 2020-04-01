@@ -1,0 +1,66 @@
+/* Pseudo clases  */
+/* Una pseudo clase se indica con dos puntos después del selector y el nombre de la clase */
+/* Estas Pseudoclases indican el comportamiento de un elemento */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+  font-size: 20px;
+}
+
+/* first-child selecciona el primer hijo, en este caso la primera li */
+ul li:first-child {
+  /* Estos estilos solo afectarán al primer elemento li */
+  color: purple;
+  font-weight: bold;
+}
+
+/* nth-child(n): Permite seleccionar el n-esimo hijo */
+ul li:nth-child(2) {
+  color: orange;
+  font-weight: bold;
+}
+
+/* last-child: Selecciona el último elemento hijo */
+ul li:last-child {
+  color: cyan;
+  font-weight: bold;
+}
+
+/* Puedo usar Pseudoclases con enlaces */
+#mi-enlace {
+  color: lightsalmon;
+  font-size: 30px;
+}
+
+/* link: estilos para cuando no he visitado el enlace */
+#mi-enlace:link {
+  color: red;
+}
+
+/* visited: estilos para cuando ya visité el enlace */
+#mi-enlace:link {
+  color: orangered;
+}
+
+/* hover: estilos para cuando paso el mouse por el enlace */
+#mi-enlace:hover {
+  color: blue;
+}
+
+/* active: estilos cuando estoy pulsando el enlace */
+#mi-enlace:active {
+  color: green;
+}
+
+input[type="text"] {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* focus: da estilos cuando tengo seleccionado un elemento */
+input[type="text"]:focus {
+  border: 4px dashed red;
+}
