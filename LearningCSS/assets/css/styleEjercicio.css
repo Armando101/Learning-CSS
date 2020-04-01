@@ -186,3 +186,16 @@ footer {
   left: 50%;
 
 }
+
+.fija {
+  /* La posición fija nos permite dejar un elemento en en la página y ahí estará aunque haga scroll */
+  position: fixed;
+  top: 50%;
+  left: 0;
+
+  border: 1px solid black;
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  font-size: 10px;
+}
