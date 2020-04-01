@@ -25,3 +25,49 @@
   background-color: orangered;
   border: 5px solid red;
 }
+
+#caja {
+  margin-top: 25px;
+  width: 250px;
+  height: 250px;
+  background-color: lightseagreen;
+  color: white;
+  border: 5px solid black;
+  font-size: 20px;
+  text-align: center;
+  line-height: 200px;
+
+  /* Indico que en este elemento quiero ocupar la animación */
+  /* iteration-count: cuantas veces se repetirá la animación */
+  /* timing-function: tipo de velocidad(más despacio al principio, más lento, etc) */
+  animation-name: despalzamiento;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* Con un keyframe indico que hará la animación */
+/* Indico el nombre de la animación */
+/* indico los estilos que tendrá en un punto A y los que tendrá en un punto B */
+/* from: hace referencia al 0% */
+/* to: hace referencia al 100% */
+@keyframes despalzamiento {
+  0% {
+    margin-left: 0px;
+    transform: rotate(0deg);
+  }
+  50% {
+    margin-left: 1000px;
+    transform: rotate(360deg);
+    border-radius: 999px;
+  }
+  75% {
+    background-color: red;
+  }
+  77% {
+    border: 10px dashed blue;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
