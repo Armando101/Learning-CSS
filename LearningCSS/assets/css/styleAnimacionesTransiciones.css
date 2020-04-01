@@ -1,0 +1,27 @@
+/* Transiciones */
+
+#boton {
+  display: block;
+  padding: 20px;
+  background-color: cyan;
+  width: 200px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  border: 5px solid rgb(6, 83, 6);
+
+  /* Indico que todas las transiciones (all) duren medio segundo (500ms) */
+  /* transition: all 500ms; */
+
+  /* Indico que sólo la transición del borde dure medio segundo */
+  /* transition: border 500ms; */
+
+  /* Puedo indicar más de una transición */
+  transition: border 500ms, background-color 3s, border-radius 1s;
+}
+
+#boton:hover {
+  border-radius: 15px;
+  background-color: orangered;
+  border: 5px solid red;
+}
