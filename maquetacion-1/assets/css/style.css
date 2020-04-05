@@ -16,6 +16,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "fajala";
+    src: url("../fonts/FjallaOne-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
  /* Estilos generales */
  * {
    padding: 0px;
@@ -297,4 +304,46 @@ button:active {
   margin-bottom: 5px;
   margin-left: 20px;
   list-style: square;
+}
+
+
+/* Secciones */
+#sections {
+  float: right;
+  width: 75%;
+  font-family: sans-serif, Arial, Helvetica;
+  margin-right: 20px;
+
+}
+
+#sections .titulo {
+  font-family: "fajala";
+  font-size: 25px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#sections section {
+  margin-top: 40px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 4px #C9C9C9;
+  color: #333;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+#sections .article {
+  margin: 20px 10px;
+}
+
+#sections .article .date {
+  color: gray;
+  font-size: 14px;
 }
