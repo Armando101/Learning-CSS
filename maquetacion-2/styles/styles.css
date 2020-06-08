@@ -35,7 +35,7 @@ body {
 }
 
 .wrap {
-	width: 1200px;
+	width: 1100px;
 	margin: 0px auto;
 }
 
@@ -104,4 +104,28 @@ header {
 #menu ul li a:hover {
 	color: #37BCF9;
 	transform: scale(1.2, 1.2);
+}
+
+/* Banner */
+
+#banner {
+	width: 96.6%;
+	height: 100px;
+	border: 10px solid white;
+	box-shadow: 0px 0px 2px gray;
+	background: url('../img/bakbaner.png');
+	background-position: -430px -140px;
+	margin: 20px auto;
+}
+
+#banner h1 {
+	display: block;
+	width: 850px;
+	font-family: "BebasNeue";
+	color: white;
+	font-size: 45px;
+	letter-spacing: 2px;
+	margin: 27px auto;
+	font-weight: normal;
+	text-shadow: 2px 2px 1px black;
 }
