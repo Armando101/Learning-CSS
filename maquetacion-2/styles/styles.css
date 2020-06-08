@@ -66,6 +66,12 @@ header {
 	float: none;
 }
 
+#logo:hover {
+	border-radius: 2px;
+	color: black;
+	background-color: #CCC;
+}
+
 .gear, .icon {
 	display: block;
 	float: left;
@@ -75,6 +81,39 @@ header {
 	font-family: WebSymbolsRegular;
 }
 
+.gear {
+	animation-name: rotate-gear;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes rotate-gear {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+#logo:hover .gear {
+	animation: fromBellow 500ms 1 linear;
+}
+
+@keyframes fromBellow {
+	0% {
+		transform: translateY(0%);
+	}
+
+	50% {
+		transform: translateY(200%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
 #logo h3 {
 	display: block;
 	float: right;
@@ -82,6 +121,20 @@ header {
 	margin-top: 5px;
 	transition: all 300ms;
 	margin-right: 45px;
+}
+
+#logo:hover h3 {
+	animation: fromRight 300ms 1 linear;
+}
+
+@keyframes fromRight {
+	from {
+		transform: translateX(200%);
+	}
+
+	to {
+		transform: translateX(0%);
+	}
 }
 
 #menu {
