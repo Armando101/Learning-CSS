@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tamaño de item en columnas</title>
+
+  <style media="screen">
+
+    body {
+      font-family: Arial;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(4,1fr);
+      grid-gap: 10px;
+      height: 100vh;
+    }
+    .item {
+      background: lightblue;
+      padding: 10px;
+      border: 1px solid red;
+      /* margin-right: 10px;
+      margin-bottom: 10px; */
+    }
+
+    /* Toma un elmeneto del tipo item que sea el numero 4 */
+    .item:nth-of-type(1) {
+      background: blue;
+      /* Para definir el Tamaño de columnas dentro de un grid usamos las siguientes dos lineas */
+      /* Le indicamos que comienze en la linea vertical 1 y termine en la linea vertical 3 */
+      /* De esta forma nos ocupara dos columnas */
+
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .item:nth-of-type(8) {
+      /* grid-column: inicio / final; */
+      grid-column: 2/4;
+      /* Con la siguente linea empezamos en la fila 1 y con el -1 le indicamos que tome todo el ancho de la pagina */
+      grid-column: 1/-1;
+    }
+
+    .item:nth-of-type(7) {
+      /* Compienza en 1 y ocupa dos espacios */
+      grid-column: 1 / span 2;
+    }
+
+  </style>
+
+  </head>
+  <body>
+    <section class="container">
+      <div class="item">item #1</div>
+      <div class="item">item #2</div>
+      <div class="item">item #3</div>
+      <div class="item">item #4</div>
+      <div class="item">item #5</div>
+      <div class="item">item #6</div>
+      <div class="item">item #7</div>
+      <div class="item">item #8</div>
+      <div class="item">item #9</div>
+      <div class="item">item #10</div>
+      <div class="item">item #11</div>
+      <div class="item">item #12</div>
+    </section>
+  </body>
+</html>

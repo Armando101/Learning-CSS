@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Columas</title>
+
+  <style media="screen">
+
+    body {
+      font-family: Arial;
+    }
+    .container {
+      display: grid;
+
+      /* grid-template-columns: 25% 50% 25%;
+      grid-template-rows: 300px 300px; */
+
+      /* Las dos lineas anteriores se pueden remplazar por la siguinete linea */
+
+      /* grid-template: filas / columnas; */
+      grid-template: 300px 100px 100px / 50% 200px 100px;
+    }
+    .item {
+      background: lightblue;
+      padding: 10px;
+      border: 1px solid red;
+    }
+
+  </style>
+
+  </head>
+  <body>
+    <section class="container">
+      <!-- Esta linea genera 12 div's -->
+      <!-- .item{contenido #$}*12 -->
+      <div class="item">contenido #1</div>
+      <div class="item">contenido #2</div>
+      <div class="item">contenido #3</div>
+      <div class="item">contenido #4</div>
+      <div class="item">contenido #5</div>
+      <div class="item">contenido #6</div>
+      <div class="item">contenido #7</div>
+      <div class="item">contenido #8</div>
+      <div class="item">contenido #9</div>
+      <div class="item">contenido #10</div>
+      <div class="item">contenido #11</div>
+      <div class="item">contenido #12</div>
+    </section>
+  </body>
+</html>

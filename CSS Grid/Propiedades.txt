@@ -1,0 +1,23 @@
+Conceptos de CSS Grid Layout
+	Grid Container: va a ser el elemento padre que va a tener puesto un nuevo tipo de display grid. Nos permite colocar otras propiedades para manipular nuestro layaout.
+
+	Grid Item: Son nuestros componentes, contenido, lo que vamos a manejar. Nuestras filas o columnas que vamos a mover a nuestro gusto. Son hijos directos de grid.
+
+	Grid Line: Lineas divisorias horizontales y verticales.
+
+	Grid Track: Espacio entre dos líneas adyacentes. Filas y columnas.
+
+	Grid Cell: Celdas, espacio en dos filas adyacentes y 2 columnas adyacentes.
+
+	Grid Area: Espacio rodeado por 4 grid lines
+
+	Unidad de medida: fracciones fr distrubuye el espacio disponible en formas iguales.
+
+	Funciones:
+	repeat(cantidad, valor) para usar el mismo valor varias veces
+	minmax(min, max) agregar un valor minimo y maximo para el tamaño al hacer responsive
+
+
+**********************************************
+Un juego
+http://cssgridgarden.com/#es

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tamaño de item en columnas</title>
+
+  <style media="screen">
+
+    body {
+      font-family: Arial;
+    }
+    .container {
+      display: grid;
+
+      grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr [final];
+
+      grid-template-rows: [inicio] 200px [linea2] 200px [final];
+      height: 100vh;
+      grid-gap: 5px;
+      /* Las siguientes lineas nos permiten acomodar mas items que no esten especificado su posicion, column o row */
+
+      /* grid-auto-flow: row; */
+      /* grid-auto-flow: column; */
+      /* grid-auto-columns: 200px 200px 200px 200px;
+      grid-auto-columns: 50px 100px; */
+      /* grid-auto-columns: 200px 200px 200px 200px; */
+      grid-auto-rows: 50px 100px;
+    }
+    .item {
+      background: lightblue;
+      padding: 10px;
+      border: 1px solid red;
+      /* margin-right: 10px;
+      margin-bottom: 10px; */
+    }
+
+    .item:nth-of-type(1) {
+      grid-column: inicio/destacado-end;
+      grid-row: inicio/final;
+    }
+
+    .item:nth-of-type(2) {
+      grid-column: destacado-end/destacado2-end;
+      grid-row: inicio/final;
+    }
+    .item:nth-of-type(3) {
+        grid-column: destacado2-end/final;
+    }
+
+  </style>
+
+  </head>
+  <body>
+    <section class="container">
+      <div class="item">item #1</div>
+      <div class="item">item #2</div>
+      <div class="item">item #3</div>
+      <div class="item">item #4</div>
+      <div class="item">item #5</div>
+      <div class="item">item #5</div>
+      <div class="item">item #5</div>
+      <div class="item">item #5</div>
+      <div class="item">item #5</div>
+      <div class="item">item #5</div>
+      <div class="item">item #5</div>
+      <div class="item">item #5</div>
+      <div class="item">item #5</div>
+      <div class="item">item #5</div>
+      <div class="item">item #5</div>
+      <div class="item">item #5</div>
+      <div class="item">item #5</div>
+      <div class="item">item #5</div>
+      <div class="item">item #5</div>
+    </section>
+  </body>
+</html>
