@@ -170,5 +170,15 @@
 			<div class="hexagon"></div>
 		</div>
 	</div>
+
+	<div id="cursor"></div>
+
+	<script type="text/javascript">
+		const cursor = document.getElementById('cursor');
+		window.onmousemove = function (event) {
+			cursor.style.left = event.clientX + 'px';
+			cursor.style.top = event.clientY + 'px';
+		}
+	</script>
 </body>
 </html>
