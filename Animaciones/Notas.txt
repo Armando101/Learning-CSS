@@ -1,0 +1,21 @@
+Propiedades de las animaciones en css:
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
+
+Cubic-bezier:
+http://cubic-bezier.com/#.17,.67,.83,.67
+
+Resumen:
+https://caballero73.github.io/animacion-w/index.html
+
+React:
+Instalacion
+	sudo npm install -g create-react-app
+Crear proyecto
+	create-react-app hello-world
+
+Ingresamos a la carpeta
+	cd hello-world
+Prendemos la aplicacion
+	npm start
+
+Con esto nos iniciara la aplicacion y nos indicara el puerto en el que esta corriendo

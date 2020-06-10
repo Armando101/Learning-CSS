@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Javascript element_animate</title>
+</head>
+<body>
+  <div class="container">
+    <div class="pelota" id="pelota"></div>
+    <div class="buttons">
+      <button class="btn" id="play">Play</button>
+      <button class="btn" id="pause">Pause</button>
+      <button class="btn" id="stop">Stop</button>
+      <button class="btn" id="reversa">Reverse</button>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+    const $pelota = document.getElementById('pelota');
+
+    // element.animate(keyframes = [{}, {}], option = {});
+    const animation = $pelota.animate([
+        // from
+      {
+        transform: 'translateX(0)'
+      },
+      // to
+      {
+        transform: 'translateX(500px)'
+
+      }
+    ],{
+      duration: 1000,
+      delay: 1000,
+      //Direction: De izquierda a derecha, de derecha a izquierda, etc
+      direction: 'normal',
+      easing: 'linear',
+      iterations: Infinity,
+      // Fill: Como quiero que se queden los estilos de la animacion cuando ésta termine.
+      fill: 'forwards',
+      // iterationStart: Controlar como va a empezar mi iteracion, en el ejemplo empieza en 50%
+      iterationStart: 0.5,
+      // endDelay:
+    });
+
+    const $playButton = document.getElementById('play')
+    const $pauseButton = document.getElementById('pause')
+    const $stopButton = document.getElementById('stop')
+    const $reverseButton = document.getElementById('reversa')
+
+    $playButton.addEventListener('click', (event) => {
+      animation.play();
+    });
+
+    $pauseButton.addEventListener('click', (event) => {
+      animation.pause();
+
+    });
+
+    $stopButton.addEventListener('click', (event) => {
+      animation.cancel();
+
+    });
+
+    $reverseButton.addEventListener('click', (event) => {
+      animation.reverse();
+
+    });
+
+  </script>
+
+</body>
+</html>

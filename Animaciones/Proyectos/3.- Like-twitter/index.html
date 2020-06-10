@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Twitter Like</title>
+</head>
+<body>
+  <div class="tweet-box">
+    <div class="like" id="like"></div>
+  </div>
+  <script type="text/javascript">
+    const $like=document.getElementById('like');
+    $like.addEventListener('click', (event)=>{
+      // console.log(event);
+      // $like.classList.add('is-liked');
+      $like.classList.toggle('is-liked');
+    });
+  </script>
+</body>
+</html>
