@@ -3,3 +3,17 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@responsive {
+	.rotate-45 {
+		transform: rotate(45deg);
+		transition: 300ms;
+	}
+}
+
+@variants hover {
+	.zoom {
+		transform: scale(2);
+		transition: 300ms;
+	}
+}

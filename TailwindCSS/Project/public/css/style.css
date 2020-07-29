@@ -18033,6 +18033,21 @@ video {
           animation: bounce 1s infinite;
 }
 
+.rotate-45 {
+  transform: rotate(45deg);
+  transition: 300ms;
+}
+
+.zoom {
+  transform: scale(2);
+  transition: 300ms;
+}
+
+.hover\:zoom:hover {
+  transform: scale(2);
+  transition: 300ms;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -35383,6 +35398,11 @@ video {
   .sm\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .sm\:rotate-45 {
+    transform: rotate(45deg);
+    transition: 300ms;
   }
 }
 
@@ -52737,6 +52757,11 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .md\:rotate-45 {
+    transform: rotate(45deg);
+    transition: 300ms;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -70090,6 +70115,11 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .lg\:rotate-45 {
+    transform: rotate(45deg);
+    transition: 300ms;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -87442,5 +87472,10 @@ video {
   .xl\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .xl\:rotate-45 {
+    transform: rotate(45deg);
+    transition: 300ms;
   }
 }
