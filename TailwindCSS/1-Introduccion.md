@@ -62,3 +62,36 @@ Podemos instalar live-server para ver nuestros cambios
 ```
 npm install -g live-server
 ```
+
+## Directivas en Tailwind
+Una directiva es una instrucción que utiliza tailwind para insertar código en el archivo final de css. 
+
+- @tailwind base;  
+Inicializa el html para que no tenga etilos, es decir, quita los estilos que vienen por default.
+
+- @tailwind utilities;
+Inyecta las clases de utileria.
+
+- @tailwind components;
+Inyecta las clases de componentes.
+
+## Configuración
+Podemos apoyarnos de la documentación para la configuración de Tailwind
+[Docs](https://tailwindcss.com/docs/configuration/#app)
+
+## Responsive Design
+Es la capacidad de un sitio para adaptarse a las diferentes pantallas.
+
+### Breakpoints
+- **default** mayor a 0px
+- **sm** mayor a 640px
+- **md** mayor a 768px
+- **lg** mayor a 1024px
+- **xl** mayor a 1280px
+
+## Mobile first
+Como desarrolladores utilizamos más una computadora pero el usuario promedio utiliza más el móvil. La tendencia es desarrollar primero para móviles, tailwind privilegia esta idea.
+
+## Utility First
+Clases descriptivas de la utilidad.
+[Docs](https://tailwindcss.com/docs/utility-first/#app)
