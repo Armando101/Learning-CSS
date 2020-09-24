@@ -24,6 +24,15 @@ footer {
     height: calc(250px / 3);
 }
 
+#slider {
+    height: 450px;
+    overflow: hidden;
+}
+
+#slider img {
+    height: 450px;
+}
+
 @media (max-width: 776px) {
     #menu {
         height: auto;
