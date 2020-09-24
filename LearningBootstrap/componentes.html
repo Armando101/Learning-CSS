@@ -187,7 +187,14 @@
           <button type="button" class="btn-tool btn btn-info mt-3" data-toggle="tooltip" data-placement="top" title="si das click sacaras una alerta">
             Alerta
           </button>
-          <!-- Fin Tooltips -->
+          <!-- Fin Popover -->
+
+          <!-- Popover -->
+          <button type="button" class="btn-pop btn btn-info mt-3" data-container="body" data-toggle="popover" data-placement="top" data-content="Esto es un popover" title="Hello">
+            Alerta
+          </button>
+          <!-- Fin Popover -->
+
           </div>
         </div>
         <div class="row col-md-8">
@@ -253,6 +260,7 @@
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <script>
       $(".btn-tool").tooltip();
+      $(".btn-pop").popover();
     </script>
 </body>
 </html>
