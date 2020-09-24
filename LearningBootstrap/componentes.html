@@ -157,44 +157,71 @@
           </div>
           <!-- Fin COLLAPSE -->
 
-          <!-- BARRA DE PROGRESO -->
-          <div class="progress mt-5">
-            <div id="barraProgreso" class="progress-bar" role="progressbar">
-              50%
+            <!-- BARRA DE PROGRESO -->
+            <div class="progress mt-5">
+              <div id="barraProgreso" class="progress-bar" role="progressbar">
+                50%
+              </div>
             </div>
-          </div>
-          <script>
-            let counter = 0;
-            const interval = setInterval(() => {
-              counter++;
-              let barra = document.querySelector('#barraProgreso');
-              barra.style.width = counter + '%';
-              barra.innerHTML = counter + '%';
-              counter === 100 && clearInterval(interval);
-            }, 300)
-          </script>
-          <!-- FIN BARRA DE PROGRESO -->
-          <!-- Tooltips -->
-          <!-- Para los tooltips es necesario el popermin.js -->
-          <button type="button" class="btn-tool btn btn-danger mt-3" data-toggle="tooltip" data-placement="bottom" title="si das click sacaras una alerta">
-            Alerta
-          </button>
+            <script>
+              let counter = 0;
+              const interval = setInterval(() => {
+                counter++;
+                let barra = document.querySelector('#barraProgreso');
+                barra.style.width = counter + '%';
+                barra.innerHTML = counter + '%';
+                counter === 100 && clearInterval(interval);
+              }, 300)
+            </script>
+            <!-- FIN BARRA DE PROGRESO -->
+            <!-- Tooltips -->
+            <!-- Para los tooltips es necesario el popermin.js -->
+            <button type="button" class="btn-tool btn btn-danger mt-3" data-toggle="tooltip" data-placement="bottom" title="si das click sacaras una alerta">
+              Alerta
+            </button>
 
-          <button type="button" class="btn-tool btn btn-warning mt-3" data-toggle="tooltip" data-placement="right" title="si das click sacaras una alerta">
-            Alerta
-          </button>
+            <button type="button" class="btn-tool btn btn-warning mt-3" data-toggle="tooltip" data-placement="right" title="si das click sacaras una alerta">
+              Alerta
+            </button>
 
-          <button type="button" class="btn-tool btn btn-info mt-3" data-toggle="tooltip" data-placement="top" title="si das click sacaras una alerta">
-            Alerta
-          </button>
-          <!-- Fin Popover -->
+            <button type="button" class="btn-tool btn btn-info mt-3" data-toggle="tooltip" data-placement="top" title="si das click sacaras una alerta">
+              Alerta
+            </button>
+            <!-- Fin Popover -->
 
-          <!-- Popover -->
-          <button type="button" class="btn-pop btn btn-info mt-3" data-container="body" data-toggle="popover" data-placement="top" data-content="Esto es un popover" title="Hello">
-            Alerta
-          </button>
-          <!-- Fin Popover -->
-
+            <!-- Popover -->
+            <button type="button" class="btn-pop btn btn-info mt-3" data-container="body" data-toggle="popover" data-placement="top" data-content="Esto es un popover" title="Hello">
+              Alerta
+            </button>
+            <!-- Fin Popover -->
+            <hr>
+            <h3>Formulario</h3>
+            <form action="">
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-preprend">
+                    <span class="input-group-text rounded-0">Name</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Introduce tu nombre">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">Email</label>
+                <input type="email" class="form-control" placeholder="Introduce tu email">
+              </div>
+              <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" class="form-control" placeholder="Introduce tu password">
+              </div>
+              <div class="form-group">
+                <label for="">Gender</label>
+                <select name="" id="" class="form-control">
+                  <option value="">Hombre</option>
+                  <option value="">Mujer</option>
+                </select>
+              </div>
+              <input type="submit" class="btn btn-success" value="Enviar">
+            </form>
           </div>
         </div>
         <div class="row col-md-8">
