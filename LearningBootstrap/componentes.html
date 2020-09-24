@@ -156,6 +156,24 @@
             <div class="card card-body bg-dark text-white">Information hidden</div>
           </div>
           <!-- Fin COLLAPSE -->
+
+          <!-- BARRA DE PROGRESO -->
+          <div class="progress mt-5">
+            <div id="barraProgreso" class="progress-bar" role="progressbar">
+              50%
+            </div>
+          </div>
+          <script>
+            let counter = 0;
+            const interval = setInterval(() => {
+              counter++;
+              let barra = document.querySelector('#barraProgreso');
+              barra.style.width = counter + '%';
+              barra.innerHTML = counter + '%';
+              counter === 100 && clearInterval(interval);
+            }, 300)
+          </script>
+          <!-- FIN BARRA DE PROGRESO -->
           </div>
         </div>
         <div class="row col-md-8">
