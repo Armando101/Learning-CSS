@@ -5,15 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Bootstrap</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-    <div class="p-5 w-75 border m-auto">
-        <h1>Learning Bootstrap</h1>
-        <h2>Welcome to this course</h2>
-
-        <button class="btn btn-success">Click me</button>
-    </div>
+   <div class="container border">
+       <div class="row">
+           <header class="col-12 bg-primary text-white p-2 pl-5">
+               <h1>Learning Bootstrap</h1>
+           </header>
+           <nav id="menu" class="col-12 bg-secondary text-white">
+               <ul class="row">
+                   <li class="col">Inicio</li>
+                   <li class="col">Pagina1</li>
+                   <li class="col">Pagina2</li>
+                   <li class="col">Pagina3</li>
+                   <li class="col">Contacto</li>
+               </ul>
+           </nav>
+           <section id="content" class="col-12">
+               <div class="row">
+                   <sections id="products" class="col-9 border">
+                       <h2>Products</h2>
+                       <hr>
+                       <div class="items row">
+                           <div class="item col-3 bg-primary m-3">Producto</div>
+                           <div class="item col-3 bg-warning m-3">Producto</div>
+                           <div class="item col-3 bg-danger m-3">Producto</div>
+                       </div>
+                       <div class="items row">
+                        <div class="item col-3 bg-primary m-3">Producto</div>
+                        <div class="item col-3 bg-warning m-3">Producto</div>
+                        <div class="item col-3 bg-danger m-3">Producto</div>
+                    </div>
+                    <div class="items row">
+                        <div class="item col-3 bg-primary m-3">Producto</div>
+                        <div class="item col-3 bg-warning m-3">Producto</div>
+                        <div class="item col-3 bg-danger m-3">Producto</div>
+                    </div>
+                    <div class="items row">
+                        <div class="item col-3 bg-primary m-3">Producto</div>
+                        <div class="item col-3 bg-warning m-3">Producto</div>
+                        <div class="item col-3 bg-danger m-3">Producto</div>
+                    </div>
+                    </sections>
+                    <aside class="col-3 border">
+                        <h2>Barra lateral</h2>
+                    </aside>
+                </div>
+           </section>
+       </div>
+   </div>
 
     <script type="text/javascript" src="jquery/jquery.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
