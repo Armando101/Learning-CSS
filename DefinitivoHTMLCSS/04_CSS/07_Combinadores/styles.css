@@ -1,0 +1,31 @@
+/*********************** Hermano cercano *********************/
+
+/* Aplicale la regla a todos los p que que estén después de un h2 */
+/* Este operador es conocido como hermano cercano */
+
+/*
+h2 + p {
+    color: chocolate;
+}
+*/
+
+/********************* Hermano general ************************/
+
+/* Aplica los estilos a los hermanos generales, esto es en la misma jerarquia */
+/* h2 ~ p {
+    color: chocolate;
+}
+*/
+
+/********************* Hijo ************************/
+
+/* Aplicale estilos a la etiqueta p que sea hijo directo de un div */
+/* div > p {
+    color: chocolate;
+} */
+
+/********************* Descendiente ************************/
+/* Aplica estilos a todos los p que estén dentro de un div */
+div p {
+    color: chocolate;
+}
