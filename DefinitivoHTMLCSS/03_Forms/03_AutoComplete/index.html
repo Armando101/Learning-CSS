@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocomplete</title>
+</head>
+<body>
+
+    <!-- Cuando colocamos el atributo autocomplete, el navegador toma la  información de las cuentas que tenemos vinucladas en nuestro navegador, toma esa información y llena el formulario -->
+
+    <form action="">
+        <label for="nombre">
+            <span>¿Cuál es tu nombre?</span>
+            <input type="text" name="nombre" id="nombre" autocomplete="name" required>
+        </label>
+        
+        <label for="correo">
+            <span>¿Cuál es tu correo?</span>
+            <input type="email" name="correo" id="correo" autocomplete="email" required>
+        </label>
+
+        <label for="pais">
+            <span>¿Cuál es tu pais?</span>
+            <input type="text" name="pais" id="pais" autocomplete="country" required>
+        </label>
+
+        <label for="cp">
+            <span>¿Cuál es tu código postal?</span>
+            <input type="number" name="cp" id="cp"autocomplete="postal-code" required>
+        </label>
+
+        <input type="submit" name="" id="">
+
+    </form>
+</body>
+</html>
