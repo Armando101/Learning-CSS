@@ -1,0 +1,16 @@
+/* La importancia de usar rem es que si se modifica el tamaño de la fuente directo en el navegador tambien se incrementa el tamaño de nuestros textos.
+
+Si usamos medidas absolutas aunque modifiquemos en tamaño de fuente en el navegador, la letra no crece */
+
+html {
+    font-size: 62.5%;
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.8re,;
+}

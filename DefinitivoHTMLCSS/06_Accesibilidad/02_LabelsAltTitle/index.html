@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAbels, alt y title</title>
+</head>
+<body>
+    
+    <!-- El label es importante ya que al dar la barra espaciadora en en la label o seleccionarla ya nos hace focus en el input -->
+
+    <main>
+        <form action="">
+            <label for="name">
+                <span>¿Cuál es tu nombre?</span>
+                <input id="name" type="text">
+            </label>
+            <label for="started-studying">
+                <span>¿Qué día comenzaste a estudiar?</span>
+                <input id="started-studying" type="date">
+            </label>
+            <label for="time-to-study">
+                <span>¿En qué horario estudias?</span>
+                <input id="time-to-study" type="time">
+            </label>
+        </form>
+    </main>
+
+    <!-- El alt es importante para darle una descripción a los screen readers -->
+    <!-- El title nos manda una descripción al hacer un hover en la imágen -->
+
+    <section>
+        <img src="https://images.pexels.com/photos/5875946/pexels-photo-5875946.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+        alt="Esta es una imagen de prueba"
+        title="Esta descripción se muestra con el atributo title">
+    </section>
+
+</body>
+</html>
