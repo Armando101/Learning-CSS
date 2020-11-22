@@ -1,0 +1,33 @@
+/* 
+Orden recomendable para agregar estilos
+
+1. Posicionamiento
+2. Modelo de caja (Box model)
+3. Tipografía
+4. Temas visuales (Box shadow, border radius, etc)
+5. Otros
+*/
+
+/* Colores */
+:root {
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warn-black: #201E1C;
+    --back: #282623;
+    --grey: #bababa;
+    --off-white: #FAF8F7;
+    --just-white: #FFF;
+}
+
+* {
+    box-sizing: content-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
